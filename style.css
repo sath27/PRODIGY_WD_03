@@ -1,0 +1,40 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./neon-light-background-vector.jpg);
+  color:rgb(240, 240, 239)
+}
+.cell{
+    width: 105px;
+    height: 105px;
+    border: 3px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.cell:hover{
+  background-color: rgb(112, 111, 111);
+}
+#container{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+#cellContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+#restart
+{
+  padding: 15px 15px;
+  margin: 30px 10px;
+  border-radius: 20px;
+  border: 3px solid #fcfcfc;
+}
